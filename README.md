@@ -26,13 +26,16 @@ We provide the code for processing training data following our proposed honesty-
 ### Evaluation
 In the paper, we measure the performance of aligned models on several datasets, including public datasets **TriviaQA**, **Non-AmbigQA** and **MMLU**, and specific datasets **PUkQA** and **PKQA** constructed by ourselves. Detailed evaluation code can be found in [evaluation](https://github.com/GAIR-NLP/alignment-for-honesty/tree/main/evaluation).
 
-## 🦙Honest LLaMA
-The two best honesty-aligned models are now available on huggingface-hub.
+## 👴Confucius
 
-| Model Name | HF Checkpoint | Size  | License |
-| :--- | :--- |:------| :--- |
-| Confidence-Verb | | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
-| Multisample | | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+><span style="font-family: 'Times New Roman', serif; font-style: italic;">To know what you know and to know what you do not know, that is true knowledge. — The Analects of Confucius </span>
+
+The two best honesty-aligned models are now available on huggingface-hub:
+
+| Model Name                | HF Checkpoint | Size  | License |
+|:--------------------------| :--- |:------| :--- |
+| confucius-confidence-verb | | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+| confucius-multisample     | | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
 
 ### Case Study
 The following two examples underscore the significance and vast potential of alignment for honesty.
@@ -40,7 +43,7 @@ The following two examples underscore the significance and vast potential of ali
 <img src="figure/case.png" width="450"/>
 </p>
 
-> We acknowledge that there is still a significant room for improving, particularly in areas such as calibration and generalization across various families of LLMs. We will focus on these refinements in the future.
+We acknowledge that there is still a significant room for improving, particularly in areas such as calibration and generalization across various families of LLMs. We will focus on these refinements in the future.
 
 ## 🥳Citation
 If you find our work useful, please cite our paper:
