@@ -36,6 +36,9 @@ The two best honesty-aligned models are now available on huggingface-hub.
 
 ### Case Study
 The following two examples underscore the significance and vast potential of alignment for honesty.
+<p align="center"> 
+<img src="figure/case.png" width="450"/>
+</p>
 
 > We acknowledge that there is still a significant room for improving, particularly in areas such as calibration and generalization across various families of LLMs. We will focus on these refinements in the future.
 
