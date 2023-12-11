@@ -35,7 +35,7 @@ The two best honesty-aligned models are now available on huggingface-hub:
 | Model Name                | HF Checkpoint                                                                              | Size  | License |
 |:--------------------------|:-------------------------------------------------------------------------------------------|:------| :--- |
 | confucius-confidence-verb | 🤗 [GAIR/confucius-confidence-verb](https://huggingface.co/GAIR/confucius-confidence-verb) | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
-| confucius-multisample     | 🤗 [GAIR/confucius-confidence-verb](https://huggingface.co/GAIR/confucius-multisample)                                                      | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+| confucius-multisample     | 🤗 [GAIR/confucius-multisample](https://huggingface.co/GAIR/confucius-multisample)         | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
 
 ### Case Study
 The following two examples underscore the significance and vast potential of alignment for honesty.
