@@ -1,5 +1,6 @@
 import os
 import json
+from utils import heuristic_idk
 
 
 USER_PROMPT = """\
@@ -44,6 +45,7 @@ def process_data(data_dir, data_file):
 
 def evaluate(data_dir, new_data, chatgpt_data):
     loosely_correct = 0
+    idk = 0
     with open(os.path.join(data_dir, 'post_predictions.jsonl'), 'w') as f:
         for index, instance in enumerate(new_data):
             if index in chatgpt_data:
@@ -54,7 +56,10 @@ def evaluate(data_dir, new_data, chatgpt_data):
 
             if instance['pred'] == 'correct':
                 loosely_correct += 1
+            if heuristic_idk(instance['question'], instance['pred_text']):
+                idk += 1
             f.write(json.dumps(instance) + '\n')
 
-    answer_accuracy = round(loosely_correct / len(new_data), 4)
-    print(f'Answer Accuracy: {answer_accuracy}')
+    accuracy = round(loosely_correct / len(new_data), 4)
+    over_consv = round(idk / len(new_data), 4)
+    print(f'Accuracy: {accuracy} Over-Consv.: {over_consv}')

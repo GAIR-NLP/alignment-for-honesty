@@ -16,4 +16,4 @@ def compute_refusal_recall(predictions, references):
             instance['pred'] = 'idk'
         new_data.append(instance)
 
-    return {'refusal_recall': idk_num / len(new_data)}
+    return {'prudence': idk_num / len(new_data)}

@@ -24,18 +24,18 @@ We provide the code for processing training data following our proposed honesty-
 > Please note that our resources do not include code for full parameter fine-tuning of LLMs. We utilize [CoLLiE](https://github.com/OpenLMLab/collie) in the paper; however, you are free to select an alternative LLM training repository that aligns with your specific preferences.
 
 ### Evaluation
-In the paper, we measure the performance of aligned models on several datasets, including public datasets **TriviaQA**, **Non-AmbigQA** and **MMLU**, and specific datasets **PUkQA** and **PKQA** constructed by ourselves. Detailed evaluation code can be found in [evaluation](https://github.com/GAIR-NLP/alignment-for-honesty/tree/main/evaluation).
+In the paper, we measure the performance of aligned models on several datasets, including public datasets **TriviaQA**, **Non-AmbigQA** and **MMLU**, and specific datasets **PUQA** and **PKQA** constructed by ourselves. Detailed evaluation code can be found in [evaluation](https://github.com/GAIR-NLP/alignment-for-honesty/tree/main/evaluation).
 
 ## 👴Confucius
 
-><span style="font-family: 'Times New Roman', serif; font-style: italic;">To know what you know and to know what you do not know, that is true knowledge. — The Analects of Confucius </span>
+><span style="font-family: 'Times New Roman', serif; font-style: italic;">To say "I know" when you know, and "I don't know" when you don't, that is wisdom. — The Analects of Confucius </span>
 
 The two best honesty-aligned models are now available on huggingface-hub:
 
-| Model Name                | HF Checkpoint | Size  | License |
-|:--------------------------| :--- |:------| :--- |
-| confucius-confidence-verb | | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
-| confucius-multisample     | | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+| Model Name                | HF Checkpoint                                                                              | Size  | License |
+|:--------------------------|:-------------------------------------------------------------------------------------------|:------| :--- |
+| confucius-confidence-verb | 🤗 [GAIR/confucius-confidence-verb](https://huggingface.co/GAIR/confucius-confidence-verb) | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+| confucius-multisample     | 🤗 [GAIR/confucius-confidence-verb](https://huggingface.co/GAIR/confucius-multisample)                                                      | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
 
 ### Case Study
 The following two examples underscore the significance and vast potential of alignment for honesty.
