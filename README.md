@@ -8,7 +8,7 @@ As for the "HHH" alignment princeple, while there has been a significant focus o
 <img src="figure/intro.png" width="400"/>
 </p>
 
-<center>**Illustration of Alignment for Honesty.** Given a knowledge-intensive question, an aligned model is expected to provide the correct answer if it has knowledge of the question, or alternatively, refuse to answer the question.</center>
+<center>Illustration of Alignment for Honesty. Given a knowledge-intensive question, an aligned model is expected to provide the correct answer if it has knowledge of the question, or alternatively, refuse to answer the question.</center>
 
 ## 📖Resources
 ### Data
@@ -46,4 +46,12 @@ The following two examples underscore the significance and vast potential of ali
 We acknowledge that there is still a significant room for improving, particularly in areas such as calibration and generalization across various families of LLMs. We will focus on these refinements in the future.
 
 ## 🥳Citation
-If you find our work useful, please cite our paper.
+If you find our work useful, please cite our paper:
+```bibtex
+@inproceedings{Yang2023AlignmentFH,
+  title={Alignment for Honesty},
+  author={Yuqing Yang and Ethan Chern and Xipeng Qiu and Graham Neubig and Pengfei Liu},
+  year={2023},
+  url={https://api.semanticscholar.org/CorpusID:266174420}
+}
+```
