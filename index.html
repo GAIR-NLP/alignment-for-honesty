@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Alignment for Honesty">
+  <meta name="keywords" content="LLM, Honesty, GenerativeAI, Alignment">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alignment for Honesty</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/alignment_for_honesty_photo.png">-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <!--
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+      
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div>
+      -->
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Alignment for Honesty</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ayyyq.github.io/">Yuqing Yang</a><sup>3,5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ethanc111.github.io/">Ethan Chern</a><sup>1,5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://xpqiu.github.io/en.html">Xipeng Qiu</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.phontron.com/">Graham Neubig</a><sup>4</sup>,
+            <span class="author-block">
+              <a href="https://plms.ai/index.html">Pengfei Liu</a><sup>1,2,5*</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University</span>
+            <span class="author-block"><sup>2</sup>Shanghai AI Lab</span>
+            <br>
+            <span class="author-block"><sup>3</sup>Fudan University</span>
+            <span class="author-block"><sup>4</sup>Carnegie Mellon University</span>
+            <br>
+            <span class="author-block"><sup>5</sup>Generative Artificial Intelligence Research Lab (GAIR)</span>
+            <br>
+            <span class="author-block"><sup>*</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+              <!-- Video Link. -->
+
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.07000"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/GAIR-NLP/alignment-for-honesty"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://huggingface.co/GAIR/confucius-multisample" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        &#x1F917;
+                    </span>
+                    <span>Model (confucius-multisample)</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://huggingface.co/GAIR/confucius-confidence-verb" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        &#x1F917;
+                    </span>
+                    <span>Model (confucius-confidence-verb)</span>
+                </a>
+              </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+        free-viewpoint
+        portraits.
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+<!--
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure>
+            <img src="./static/images/confucius.png" alt="Description of first image" style="width: 80%;">
+        </figure>
+        <p>
+          <i>"To say 'I know' when you know, and 'I don't know' when you don't, that is wisdom."</i>
+          <br>
+          <span style="font-size: small; float: right;">- The Analects of Confucius</span>
+        </p>
+      </div>
+    </div>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered" font-size: 18px;>
+      <div class="column is-four-fifths">
+        <h1 class="title is-3">Abstract</h1>
+        <div class="content has-text-justified">
+          <p>We propose <strong>Alignment for Honesty</strong>, aiming to ensure that LLMs proactively refuse to answer questions when they lack knowledge, while still not being overly conservative. Aligning models to be honest will signifcantly enhance the trustworthiness and reliability of modern LLMs.</p>
+          <p>The key principles of alignment are often summarized as the <strong>HHH</strong> criteria: helpful, harmless, honest. There has been a significant focus on enhancing the helpfulness and harmlessness of LLMs. However, <strong>honesty</strong>, despite its importance in establishing reliable and safe AI, has received relatively less attention in research. There are several primary challenges in improving the honesty of models:</p>
+          <ul>
+              <li>The definition of honesty varies across papers. In this paper, inspired by the Analects of Confucius, we define an honest model as a model that candidly answers questions it knows and humbly admit to those it does not.</li>
+              <li>Another challenge lies in distinguishing the knowledge boundaries of a specific LLM; discerning between what is known and unknown. Accessing the pretrain data for modern LLMs could be difficult; even when given access to the pretrained data of a model, we cannot ensure that the model remembers all of its pretrain data. In this paper, we shift our focus from <i>knowledge</i> to <i>questions</i> and determine whether a certain model should abstain from answering a question based on its capability to provide the correct answer to that question.</li>
+          </ul>
+        <p>In this paper, we propose a systemetic framework for alignment for honesty.</p>
+        <ul>
+            <li>We introduce the concept of "I don't know" (idk) response to signify when a model explicitly refuses to answer a given question.</li>
+            <li>We introduce <i>evolutionary metrics</i> to evaluate alignment of honesty. </li>
+            <li>We propose several supervised fine-tuning (SFT) based honesty alignment approaches.</li>
+        </ul>
+        
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <div class="columns is-centered has-text-centered" font-size: 18px;>
+      <div class="column is-four-fifths">
+        <h1 class="title is-3">Evolutionary Metrics</h1>
+        <div class="content has-text-justified">
+          <p>We view aligment as a process of iterative refinement. We introduce the concept of "evolutionary metric" to represent the change in model’s response type before t and after t+1 alignment for honesty</p>
+          <figure>
+            <img src="./static/images/evolutionary_metric.png" alt="Description of first image" style="width: 80%;">
+          </figure>
+          <p>We define 3 different scores based on the evolutionary metric:</p>
+            <ul>
+              <li>Over-Conservativeness Score: This metric is used to characterize the extent to which the model, after alignment operations, refuses to answer questions that it should originally be able to answer correctly.</li>
+              <img src="./static/images/over_conservative_score.png" alt="Description of first image">
+              <li>Prudence Score: This metric is used to characterize the extent to which the model can humbly decline to answer questions it does not know or answer incorrectly.</li>
+              <img src="./static/images/prudence_score.png" alt="Description of first image">
+              <li>Honesty Score:  We can comprehensively consider both the model’s ability to refuse to answer and its ability not to be excessively cautious, in order to quantitatively measure the degree of honesty in the model post-alignment.</li>
+              <img src="./static/images/honesty_score.png" alt="Description of first image">
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered" font-size: 18px;>
+      <div class="column is-four-fifths">
+        <h1 class="title is-3">Alignment Approaches</h1>
+        <div class="content has-text-justified">
+          
+          <figure>
+            <img src="./static/images/training_data_labeling.png" alt="Description of first image">
+            <figcaption>SFT training data labeling</figcaption>
+          </figure>
+          <p>We propose three SFT-based honesty alignment approaches. We use different approaches to approximate whether a model knows or does not know the answer to a question. We then use these approaches to annotate the SFT training samples.</p>
+          <p> Specifically, given a question x, and its responses y = {y<sub style="vertical-align: sub; font-size: smaller;">1</sub>, y<sub style="vertical-align: sub; font-size: smaller;">2</sub>, · · · , y<sub style="vertical-align: sub; font-size: smaller;">m</sub>} generated by the model M<sub style="vertical-align: sub; font-size: smaller;">t</sub> under m trials, we define <strong>expected accuracy</strong> as the ratios of correct responses among m candidate responses. We present 3 different alignment strategies, and each strategy includes <strong>definition of k(·)</strong> and <strong>annotation of SFT training samples</strong>. Note that k(x) &isin; {1 (known), -1 (unknown)} is a function that judges if a model M<sub style="vertical-align: sub; font-size: smaller;">t</sub> knows the answer to input x.</p>
+          <ul>
+            <li>Absolute: 
+              <ul>
+                <li>Definition of k(·): <img src="./static/images/k_absolute.png" alt="Description of first image" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"> </li>
+                <li>Annotation of SFT training samples: For “known questions” (i.e., k(x) = 1), we randomly selected correct responses from the model as the output. For “unknown questions”, its original responses will be replaced by “idk responses”.</li>
+              </ul>
+            <li>Confidence-Verb: 
+              <ul>
+                <li>Definition of k(·): <img src="./static/images/k_absolute.png" alt="Description of first image" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"> </li>
+                <li>Annotation of SFT training samples: We prefix the expression of confidence (determined by expected accuracy) in the output of known samples. We have two annotation approaches, <strong>CONFIDENCE-NUM</strong> (A1 (least confident) to A3 (most confident)) and <strong>CONFIDENCE-VERB</strong> (A1 (least confident) to A6 (most confident)), as shown below.  <img src="./static/images/confidence_annotation.png" alt="Description of first image" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"> </li>
+              </ul>
+            <li>Multisample:
+              <ul>
+                <li>Definition of k(·): In order to make the model aware of varying confidence levels in questions during training, we take advantage of the set of m sampled responses and replace the wrong responses with idk responses. Specifically, given a question x and one response y<sub style="vertical-align: sub; font-size: smaller;">i</sub>: <img src="./static/images/k_multi_sample.png" alt="Description of first image" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"></li>
+                <li>Annotation of SFT training samples: Let’s say among m = 10 sampled responses for a question x, if only 1 response y<sub style="vertical-align: sub; font-size: smaller;">0</sub> provides an incorrect answer, while the other 9 responses {y<sub style="vertical-align: sub; font-size: smaller;">i = 1, . . . , 9</sub>}, despite minor differences in wording, all provide the correct answer, we include (x, y<sub style="vertical-align: sub; font-size: smaller;">0</sub>' | type(y<sub style="vertical-align: sub; font-size: smaller;">0</sub>') = idk) and (x, y<sub style="vertical-align: sub; font-size: smaller;">1</sub>' | type(y<sub style="vertical-align: sub; font-size: smaller;">1</sub>') = correct), . . . , (x, y<sub style="vertical-align: sub; font-size: smaller;">9</sub>' | type(y<sub style="vertical-align: sub; font-size: smaller;">9</sub>') = correct) in the training dataset. As a result, compared to the previous methods, with the same questions, this method expands the training dataset by a factor of m.</li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered" font-size: 18px;>
+      <div class="column is-four-fifths">
+        <h1 class="title is-3">Experiments and Results</h1>
+        <div class="content has-text-justified">
+          
+          <figure>
+            <img src="./static/images/iid_eval.png" alt="Description of first image">
+            <figcaption>In-distribution evaluation</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./static/images/ood_eval.png" alt="Description of first image">
+            <figcaption>Out-of-distribution evaluation</figcaption>
+          </figure>
+        </div>
+        </div>
+    </div>
+  
+    <!--/ Matting. -->
+    <!-- Concurrent Work. -->
+<!--
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+
+</section>
+
+<div class="columns is-centered has-text-centered" font-size: 18px;">
+  <div class="column is-four-fifths">
+  <div class="container is-max-desktop content">
+    <h1 class="title is-3">Demo</h1>
+  <!-- First figure -->
+  <figure>
+    <img src="./static/images/case.png" alt="Description of third image">
+    </figure>
+</div>
+</div>
+</div>
+
+<div class="columns is-centered has-text-centered" font-size: 18px;">
+  <div class="column is-four-fifths">
+  <div class="container is-max-desktop content">
+    <h1 class="title is-3">Glossary of important concepts in LLM knowledge manipulation</h1>
+  <!-- First figure -->
+  <figure>
+    <img src="./static/images/glossary_llm_knowledge.png" alt="Description of third image">
+  </figure>
+</div>
+</div>
+</div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{yang2023alignment,
+      title={Alignment for Honesty},
+      author={Yang, Yuqing and Chern, Ethan and Qiu, Xipeng and Neubig, Graham and Liu, Pengfei},
+      journal={arXiv preprint arXiv:2312.07000},
+      year={2023}
+    }</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+ <!--
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+</body>
+</html>
