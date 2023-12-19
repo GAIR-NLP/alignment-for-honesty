@@ -48,10 +48,10 @@ We acknowledge that there is still a significant room for improving, particularl
 ## 🥳Citation
 If you find our work useful, please cite our paper:
 ```bibtex
-@inproceedings{Yang2023AlignmentFH,
+@article{yang2023alignment,
   title={Alignment for Honesty},
-  author={Yuqing Yang and Ethan Chern and Xipeng Qiu and Graham Neubig and Pengfei Liu},
-  year={2023},
-  url={https://api.semanticscholar.org/CorpusID:266174420}
+  author={Yang, Yuqing and Chern, Ethan and Qiu, Xipeng and Neubig, Graham and Liu, Pengfei},
+  journal={arXiv preprint arXiv:2312.07000},
+  year={2023}
 }
 ```
