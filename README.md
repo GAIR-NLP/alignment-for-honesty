@@ -34,8 +34,8 @@ The two best honesty-aligned models are now available on huggingface-hub:
 
 | Model Name                | HF Checkpoint                                                                              | Size  | License |
 |:--------------------------|:-------------------------------------------------------------------------------------------|:------| :--- |
-| confucius-confidence-verb | 🤗 [GAIR/confucius-confidence-verb](https://huggingface.co/GAIR/confucius-confidence-verb) | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
-| confucius-multisample     | 🤗 [GAIR/confucius-multisample](https://huggingface.co/GAIR/confucius-multisample)         | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+| confucius-confidence-verb | 🤗 [confucius-confidence-verb](https://huggingface.co/GAIR/confucius-confidence-verb) | 13B | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
+| confucius-multisample     | 🤗 [confucius-multisample](https://huggingface.co/GAIR/confucius-multisample)         | 13B  | [Llama2-Chat](https://ai.meta.com/resources/models-and-libraries/llama-downloads/)|
 
 ### Case Study
 The following two examples underscore the significance and vast potential of alignment for honesty.
@@ -44,14 +44,3 @@ The following two examples underscore the significance and vast potential of ali
 </p>
 
 We acknowledge that there is still a significant room for improving, particularly in areas such as calibration and generalization across various families of LLMs. We will focus on these refinements in the future.
-
-## 🥳Citation
-If you find our work useful, please cite our paper:
-```bibtex
-@article{yang2023alignment,
-  title={Alignment for Honesty},
-  author={Yang, Yuqing and Chern, Ethan and Qiu, Xipeng and Neubig, Graham and Liu, Pengfei},
-  journal={arXiv preprint arXiv:2312.07000},
-  year={2023}
-}
-```
