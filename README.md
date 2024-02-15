@@ -1,5 +1,5 @@
 # Alignment for Honesty
-This is the official repository for [Alignment for Honesty](https://arxiv.org/abs/2312.07000).
+This is the official repository for **Alignment for Honesty**.
 
 ## 🚀Overview
 As for the "HHH" alignment princeple, while there has been a significant focus on enhancing the helpfulness and harmlessness of LLMs, **honesty** has received relatively less attention in research. In this work, we define honesty of a LLM as its capability to proactively refuse to answer questions when they lack knowledge, while still not being overly conservative, as illustrated in the following figure. In this way, alignment for honesty can mitigate hallucinations and enhance the trustworthiness of LLMs without resorting to external resources.
